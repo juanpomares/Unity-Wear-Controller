@@ -2,6 +2,6 @@
 
 Unity plugin that uses Android Wear smartwatch as controller of the videogame.
 
-![Plugin](./tree/master/Unity Plugin)
+[Plugin](/Unity Plugin)
 
-![Example Project](./tree/master/Example Project)
+[Example Project](/Example Project)
