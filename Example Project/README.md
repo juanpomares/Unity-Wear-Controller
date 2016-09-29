@@ -1,8 +1,7 @@
 # Example Project - Unity Wear Controller
 
 
-Unity application that you play in the smartphone and the smartwatch is the controller.
-
+In this project, you can play some minigames using the Android Wear as controller.
 
 [Youtube Link](https://www.youtube.com/watch?v=hwc8hd744KE)
 
