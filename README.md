@@ -1,10 +1,7 @@
 # Unity Wear Controller
 
-Unity application that you play in the smartphone and the smartwatch is the controller.
+Unity plugin that uses Android Wear smartwatch as controller of the videogame.
 
+![Plugin](./tree/master/Unity Plugin)
 
-[Youtube Link](https://www.youtube.com/watch?v=hwc8hd744KE)
-
-[Play Store Link](https://play.google.com/store/apps/details?id=juanpomares.tfm.matermoviles.unitywearcontroller)
-
-![Unity Wear Controller screenshots](./screenshots/MainScreenshot.png?raw=true)
+![Example Project](./tree/master/Example Project)
