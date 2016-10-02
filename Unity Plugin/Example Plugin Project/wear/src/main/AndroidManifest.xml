@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pomares.juan.testingunitywear">
+
+    <uses-feature android:name="android.hardware.type.watch" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MiAppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyWearableListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED" />
+                <data android:scheme="wear" android:host="*" android:path="/TestingUnityWear-Start_activity"/>
+                <data android:scheme="wear" android:host="*" android:path="/TestingUnityWear-Stop_activity"/>
+                <!--<action android:name="com.google.android.gms.wearable.BIND_LISTENER" /> Deprecated!! -->
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
