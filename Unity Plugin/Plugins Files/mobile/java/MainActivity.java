@@ -36,12 +36,9 @@ public class MainActivity extends UnityPlayerActivity
     private String mWearableID="";
     private GoogleApiClient mApiClient=null;
 
-    //private TextView mTextView;
-
     GoogleApiClient.ConnectionCallbacks mConnectionCallbacks=null;
     GoogleApiClient.OnConnectionFailedListener mFailedListener =null;
     MessageApi.MessageListener mMessageListener=null;
-
 
 
     //Listeners Unity
@@ -64,11 +61,27 @@ public class MainActivity extends UnityPlayerActivity
 
         initializeManagerListeners();
         initGoogleApiClient();
-        /*mTextView=new TextView(this);
-        setContentView(mTextView);*/
     }
 
+	public void createShortToast(final String msg)
+    {
+        MainActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
+    public void createLongToast(final String msg)
+    {
+        MainActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
 
     public void setWearInterface(String newinterface)
     {
@@ -378,7 +391,6 @@ public class MainActivity extends UnityPlayerActivity
                 public void run() { Toast.makeText(MainActivity.this, txt, length).show(); }
             });
         }
-        //mTextView.append(txt+"\n");
     }
 
     private void ReConnection()
@@ -476,7 +488,6 @@ public class MainActivity extends UnityPlayerActivity
 
     private void NotifyObject(String idObject, String method, String message)
     {
-        //UnityPlayer.UnitySendMessage();
         UnityPlayer.UnitySendMessage(idObject, method, message);
     }
 }

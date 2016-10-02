@@ -517,13 +517,13 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
     @Override
     public void onButtonPress(ButtonName pressed)
     {
-        sendMessageChecking(PublicConstants.BUTTON_PRESS, PublicConstants.BUTTONS_NAME[pressed.ordinal()]);
+        sendMessageChecking(PublicConstants.BUTTON_PRESS, pressed.name());
     }
 
     @Override
     public void onButtonHold(ButtonName released)
     {
-        sendMessageChecking(PublicConstants.BUTTON_RELEASE, PublicConstants.BUTTONS_NAME[released.ordinal()]);
+        sendMessageChecking(PublicConstants.BUTTON_RELEASE, released.name());
     }
 
     @Override
