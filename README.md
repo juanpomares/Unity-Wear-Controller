@@ -5,24 +5,24 @@ Using this plugin you can develop videogames in Unity that can be played using a
 
 
 ##Installation
-The explication of the plugin installation is in the [documentation](/wiki).
+The explication of the plugin installation is in the [documentation](../../wiki).
 
 
 ##Usage
-The explication of the plugin usage is in a [documentation section](/wiki/Using-the-plugin).
+The explication of the plugin usage is in a [documentation section](../../wiki/Using-the-plugin).
 
 
 ##Example project
-At this repository, there are an [example Unity project](/Example Project).
+At this repository, there are an [example Unity project]((../../Example Project).
 
-In this [project](/Example Project), you can see some videogames controlled by an smartwatch.
-The [project](/Example Project) has been creted following all the steps of the (documentation)[/wiki].
+In this [project]((../../Example Project), you can see some videogames controlled by an smartwatch.
+The [project]((../../Example Project) has been creted following all the steps of the (documentation)[/wiki].
 
 
 ## Authors
 * **Juan Pomares Bernabeu** - *Initial work* - [juanpomares](https://github.com/juanpomares)
 
-See also the list of [contributors](https://github.com/juanpomares/Unity-Wear-Controller/graphs/contributors) who participated in this project.
+See also the list of [contributors](../../contributors) who participated in this project.
 
 ##License
 This project is licensed under the "Creative Commons Attribution-NonCommercial 4.0 International License" - see the LICENSE.txt file for details
