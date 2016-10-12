@@ -14,8 +14,8 @@
         android:layout_centerVertical="true"
         android:text="Loading..." />
 
-    <android.support.wearable.view.DismissOverlayView
+    <!--<android.support.wearable.view.DismissOverlayView
         android:id="@+id/dismiss_overlay"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"/>-->
 </RelativeLayout>

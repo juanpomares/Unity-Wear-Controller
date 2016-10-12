@@ -68,22 +68,19 @@ public class MainActivity extends UnityPlayerActivity
         setContentView(mTextView);*/
     }
 
-    public void createShortToast(final String msg)
-    {
-        MainActivity.this.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
+    public void createShortToast(final String msg){ createToast(msg, Toast.LENGTH_SHORT); }
+    public void createLongToast(final String msg) { createToast(msg, Toast.LENGTH_LONG);  }
 
-    public void createLongToast(final String msg)
+    public void createShortToastWear(final String msg){ sendMessageChecking(PublicConstants.TOAST_SHORT, msg); }
+    public void createLongToastWear(final String msg) { sendMessageChecking(PublicConstants.TOAST_LONG, msg);  }
+
+
+    private void createToast(final String msg, final int length)
     {
         MainActivity.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(MainActivity.this, msg, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, msg, length).show();
             }
         });
     }

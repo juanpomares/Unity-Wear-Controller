@@ -10,6 +10,9 @@ public class PublicConstants
     public static final String ACTIVE_SENSORS = "/active_sensors";
     public static final String DEACTIVE_SENSORS = "/deactive_sensors";
 
+    public static final String TOAST_LONG = "/toast_long";
+    public static final String TOAST_SHORT = "/toast_short";
+
     public static final String CONNECTION_WELL = "okay";
 
     public static final String BUTTON_PRESS = "buttonPress";

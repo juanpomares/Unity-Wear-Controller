@@ -56,8 +56,8 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
     private GoogleApiClient.OnConnectionFailedListener mConnectionFailedListener=null;
     private MessageApi.MessageListener mMessageListener=null;
 
-    private DismissOverlayView mDismissOverlay=null;
-    private GestureDetector mDetector;
+    /*private DismissOverlayView mDismissOverlay=null;
+    private GestureDetector mDetector;*/
 
     private void initializeVariables()
     {
@@ -141,6 +141,7 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
         }else
             AppSharedPreferences.setAppOpen(this, true);
 
+		/*	
         // Obtain the DismissOverlayView element
         mDismissOverlay = (DismissOverlayView) findViewById(R.id.dismiss_overlay);
         mDismissOverlay.setIntroText("Long Press to dismiss");
@@ -151,25 +152,18 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
             public void onLongPress(MotionEvent ev) {
                 mDismissOverlay.show();
             }
-        });
+        });*/
 
         initGoogleApiClient();
     }
 
-    // Capture long presses
+    /*// Capture long presses
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         if (mActualView == "None")
             return mDetector.onTouchEvent(ev);
         else
             return super.onTouchEvent(ev);
-    }
-
-/*
-    @Override
-    protected void onResume()
-    {
-        super.onResume();
     }*/
 
     @Override
@@ -377,6 +371,14 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
                         }
                         break;
 
+					case PublicConstants.TOAST_LONG:
+                       createToast(sData, Toast.LENGTH_LONG);
+                        break;
+
+                    case PublicConstants.TOAST_SHORT:
+                        createToast(sData, Toast.LENGTH_SHORT);
+                        break;
+					
                     case PublicConstants.ACTIVE_SENSORS:
                         ActiveSensors();
                         break;
@@ -418,6 +420,16 @@ public class MainActivity extends Activity implements ButtonListener, JoystickLi
             }
 
         };
+    }
+	
+    private void createToast(final String msg, final int length)
+    {
+        MainActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, msg, length).show();
+            }
+        });
     }
 
     public void sendMessageChecking(String path, String buffer)
