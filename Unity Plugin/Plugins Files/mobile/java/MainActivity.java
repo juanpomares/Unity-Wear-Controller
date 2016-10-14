@@ -90,14 +90,9 @@ public class MainActivity extends UnityPlayerActivity
         }
     }
 
-    public String getWearInterface()
-    {
-        return mActualView;
-    }
-    public String getButtonPressed()
-    {
-        return mButtonPressed;
-    }
+    public String getWearInterface() { return mActualView; }
+    public String getButtonPressed() { return mButtonPressed; }
+	
     public float[] getOrientationValues(){return mOrientationValues;}
     public float[] getJoystickValues(){return mJoystickValues;}
 
@@ -125,7 +120,6 @@ public class MainActivity extends UnityPlayerActivity
     {
         if(mSensorActivated)
         {
-
             mOrientationValues[0]=mOrientationValues[1]=mOrientationValues[2]=0;
 
 
@@ -427,7 +421,7 @@ public class MainActivity extends UnityPlayerActivity
     public void addButtonReleaseListener(String object, String function){ addListener(mButtonReleaseListeners, object, function);}
     public void addOrientationListener(String object, String function){ addListener(mOrientationListeners, object, function);}
     public void addConnectionListener(String object, String function){ addListener(mConnectionListeners, object, function);}
-    public void addGDisconnectionListener(String object, String function){ addListener(mDisconnectionListeners, object, function);}
+    public void addDisconnectionListener(String object, String function){ addListener(mDisconnectionListeners, object, function);}
 
     public void removeJoystickListener(String object){ removeListener(mJoystickListeners, object);}
     public void removeButtonPressListener(String object){ removeListener(mButtonPressListeners, object);}
