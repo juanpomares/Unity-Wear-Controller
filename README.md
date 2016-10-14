@@ -13,10 +13,10 @@ The explication of the plugin usage is in a [documentation section](../../wiki/U
 
 
 ##Example project
-At this repository, there are an [example Unity project](../../Example Project).
+At this repository, there are an [example Unity project](../../tree/master/Example Project).
 
-In this [project](../../Example Project), you can see some videogames controlled by an smartwatch.
-The [project](../../Example Project) has been creted following all the steps of the [documentation](../../wiki).
+In this [project](../../tree/master/Example Project), you can see some videogames controlled by an smartwatch.
+The [project](../../tree/master/Example Project) has been creted following all the steps of the [documentation](../../wiki).
 
 
 ## Authors
