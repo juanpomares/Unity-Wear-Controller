@@ -4,19 +4,19 @@ Unity plugin that uses Android Wear smartwatch as controller of the videogame.
 Using this plugin you can develop videogames in Unity that can be played using an smartwatch as the controllet.
 
 
-##Installation
+## Installation
 The explication of the plugin installation is in the [documentation](../../wiki).
 
 
-##Usage
+## Usage
 The explication of the plugin usage is in a [documentation section](../../wiki/Using-the-plugin).
 
 
-##Example project
-At this repository, there are an [example Unity project](../../tree/master/Example Project).
+## Example project
+At this repository, there are an [example Unity project]("../../tree/master/Example%20Project").
 
-In this [project](../../tree/master/Example Project), you can see some videogames controlled by an smartwatch.
-The [project](../../tree/master/Example Project) has been creted following all the steps of the [documentation](../../wiki).
+In this [project](../../tree/master/Example%20Project), you can see some videogames controlled by an smartwatch.
+The [project](../../tree/master/Example%20Project) has been creted following all the steps of the [documentation](../../wiki).
 
 
 ## Authors
@@ -24,7 +24,7 @@ The [project](../../tree/master/Example Project) has been creted following all t
 
 See also the list of [contributors](../../contributors) who participated in this project.
 
-##License
+## License
 This project is licensed under the "Creative Commons Attribution-NonCommercial 4.0 International License" - see the LICENSE.txt file for details
 
 
@@ -32,9 +32,9 @@ This project is licensed under the "Creative Commons Attribution-NonCommercial 4
 
 
 
-###Attribution
+### Attribution
 You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-###Non-comercial
+### Non-comercial
 You may not use the plugin for commercial purposes.     
 If you want use it for commercial purposes, please contact me.
