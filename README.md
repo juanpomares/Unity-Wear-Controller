@@ -13,7 +13,7 @@ The explication of the plugin usage is in a [documentation section](../../wiki/U
 
 
 ## Example project
-At this repository, there are an [example Unity project]("../../tree/master/Example%20Project").
+At this repository, there are an [example Unity project](../../tree/master/Example%20Project).
 
 In this [project](../../tree/master/Example%20Project), you can see some videogames controlled by an smartwatch.
 The [project](../../tree/master/Example%20Project) has been creted following all the steps of the [documentation](../../wiki).
